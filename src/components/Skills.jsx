@@ -2,30 +2,30 @@ import skills from '../data/skills';
 import React, { useState } from 'react';
 
 const Skills = () => {
-    console.log(skills);
     const [skillsData, setSkillsData] = useState(skills);
     let skillcategories = [...new Set(skills.map(skill => skill.category))];
     const showSkillsByCategory = (category) => {
-    if (category === 'All') {
-      setSkillsData(skills);
-    }
-    const filteredSkills = skills.filter(skill => skill.category === category);
-    setSkillsData(filteredSkills);
-};
+      if (category === 'All') {
+        setSkillsData(skills);
+        return;
+      }
+      const filteredSkills = skills.filter(skill => skill.category === category);
+      setSkillsData(filteredSkills);
+    };
   return (
-   <section id ="skills" className='bg-blue-950 text-white py-10'>
+   <section id ="skills" className='bg-blue-950 py-10 text-white sm:py-14'>
     <div className='container mx-auto px-4'>
       <h2 className='text-3xl font-bold mb-8 text-center'>My technical toolkit</h2>
-        <div className='flex justify-center mb-8'>
+        <div className='mb-8 flex flex-wrap justify-center gap-2'>
             <button 
-                className='bg-white hover:bg-purple-600 text-blue-950 font-bold py-2 px-4 rounded transition-colors cursor-pointer'
+                className='cursor-pointer rounded bg-white px-4 py-2 font-bold text-blue-950 transition-colors hover:bg-purple-600'
                 onClick={() => showSkillsByCategory('All')}
             >
                 All
             </button> 
             {skillcategories.map((category, index) => (
                 <button key={index} 
-                    className='bg-white hover:bg-purple-600 text-blue-950 font-bold py-1 px-2 rounded transition-colors ml-2 cursor-pointer'
+                    className='cursor-pointer rounded bg-white px-3 py-2 font-bold text-blue-950 transition-colors hover:bg-purple-600'
                     onClick={() => showSkillsByCategory(category)}>
                     {category}
                 </button>

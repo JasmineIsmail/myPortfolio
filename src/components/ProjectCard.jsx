@@ -1,6 +1,7 @@
-import { ExternalLink, Eye, GitBranch, X } from 'lucide-react'
 import { useEffect, useState } from 'react'
 import { createPortal } from 'react-dom'
+import { FaExternalLinkAlt,FaGithub,FaEye  } from "react-icons/fa";
+import { IoClose } from "react-icons/io5";
 
 function ProjectCard({data}) {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -30,7 +31,7 @@ function ProjectCard({data}) {
         className='p-3 rounded-full bg-black/50 hover:bg-black/70 transition-colors'
         onClick={() => setSelectedProject(data)}
       >
-        <Eye className='w-6 h-6 text-white' /> 
+        <FaEye className='w-6 h-6 text-white' /> 
       </button>
       </div>
       </div> 
@@ -46,10 +47,10 @@ function ProjectCard({data}) {
       </div>
       <div className='flex gap-2 pt-2 justify-end'>
         <a href={data.liveDemo} target="_blank" rel="noopener noreferrer" className='bg-purple-700 hover:bg-purple-600 text-white font-bold py-2 px-4 rounded transition-colors'> 
-         <ExternalLink className='w-4 h-4 inline-block mr-1' />
+         <FaExternalLinkAlt className='w-4 h-4 inline-block mr-1' />
         </a>
         <a href={data.github} target="_blank" rel="noopener noreferrer" className='bg-gray-700 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded transition-colors'>
-          <GitBranch className='w-4 h-4 inline-block mr-1' />
+          <FaGithub className='w-4 h-4 inline-block mr-1' />
         </a>
       </div>
     </div>
@@ -72,7 +73,7 @@ function ProjectCard({data}) {
             className='absolute right-3 top-3 z-10 rounded-full bg-black/60 p-2 text-white transition-colors hover:bg-black'
             onClick={() => setSelectedProject(null)}
           >
-            <X className='h-5 w-5' />
+            <IoClose className='h-5 w-5' />
           </button>
           <img src={data.image} alt={data.title} className='h-56 w-full object-cover sm:h-72' />
           <div className='space-y-5 p-6 sm:p-8'>
@@ -98,10 +99,10 @@ function ProjectCard({data}) {
             </div>
             <div className='flex flex-wrap gap-3 border-t border-slate-700 pt-5'>
               <a href={data.liveDemo} target='_blank' rel='noopener noreferrer' className='inline-flex items-center gap-2 rounded bg-sky-700 px-4 py-2 font-semibold transition-colors hover:bg-sky-600'>
-                <ExternalLink className='h-4 w-4' /> Live demo
+                <FaExternalLinkAlt className='h-4 w-4' /> Live demo
               </a>
               <a href={data.github} target='_blank' rel='noopener noreferrer' className='inline-flex items-center gap-2 rounded bg-slate-700 px-4 py-2 font-semibold transition-colors hover:bg-slate-600'>
-                <GitBranch className='h-4 w-4' /> Source code
+                <FaGithub className='h-4 w-4' /> Source code
               </a>
             </div>
           </div>

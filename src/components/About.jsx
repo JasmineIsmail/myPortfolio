@@ -1,31 +1,30 @@
-import { Terminal } from 'lucide-react'
-
+import { FaTerminal } from "react-icons/fa";
 const About = () => {
   return (
     <section
       id="about"
-      className="bg-blue-950 text-white px-6"
+      className="bg-blue-950 px-4 py-14 text-white sm:px-6 sm:py-20"
     >
-      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-12">
+      <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-10 lg:flex-row lg:gap-12">
 
         {/* About Text */}
-        <div className="w-full lg:w-3/5 max-w-3xl">
-          <h2 className="text-4xl font-extrabold mb-8 text-center">
+        <div className="w-full max-w-3xl lg:w-3/5">
+          <h2 className="mb-8 text-3xl font-extrabold text-center sm:text-4xl">
             Get to know Me
           </h2>
 
-          <p className="text-lg mb-4">
+          <p className="mb-4 text-base sm:text-lg">
             Passionate B.Tech graduate skilled in building scalable,
             responsive web applications.
           </p>
 
-          <p className="text-lg mb-4">
+          <p className="mb-4 text-base sm:text-lg">
             My technical journey expanded after practical hands-on
             application during my internship at Xman Technology
             Solutions, Kannur.
           </p>
 
-          <p className="text-lg mb-4">
+          <p className="mb-4 text-base sm:text-lg">
             I thrive on translating complex user requirements into crisp,
             responsive user experiences. Whether it's crafting scalable
             backend REST APIs using Node.js & Express or designing sleek,
@@ -36,12 +35,12 @@ const About = () => {
         </div>
 
         {/* Profile Decorative Visual */}
-        <div className="w-full lg:w-2/5 flex justify-center lg:justify-end">
-          <div className="relative group">
+        <div className="flex w-full justify-center lg:w-2/5 lg:justify-end">
+          <div className="group relative w-full max-w-xl">
 
             <div className="absolute -inset-1 bg-linear-to-r from-indigo-500 to-purple-600 rounded-3xl blur-xl opacity-50 group-hover:opacity-75 transition duration-500"></div>
 
-            <div className="relative bg-slate-900 rounded-3xl p-4 sm:p-8 lg:p-10">
+            <div className="relative rounded-3xl bg-slate-900 p-4 sm:p-8 lg:p-10">
 
               <div className="flex justify-between items-center">
                 <div className="flex gap-2">
@@ -85,7 +84,7 @@ const About = () => {
 
               <div className="p-3 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-between">
                 <div className="flex items-center gap-2">
-                  <Terminal className="w-4 h-4 text-indigo-400" />
+                  <FaTerminal className="w-4 h-4 text-indigo-400" />
                   <span className="text-xs font-semibold text-indigo-300">
                     Status: Ready to Code
                   </span>
