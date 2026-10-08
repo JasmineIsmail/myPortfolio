@@ -6,7 +6,7 @@
       category: 'Full Stack',
       featured: true,
       image: 'https://images.unsplash.com/photo-1472851294608-062f824d29cc?auto=format&fit=crop&w=800&q=80',
-      description: 'A comprehensive, end-to-end full-stack e-commerce web application engineered for modern retail. Features secure payment processing, real-time analytics',
+      description: 'A comprehensive, end-to-end full-stack e-commerce web application engineered for modern retail. Features secure payment processing, real-time analytics.',
       techStack: ['Node.js', 'Express.js', 'MongoDB', 'Mongoose', 'EJS', 'Razorpay API', 'Nodemailer', 'Chart.js'],
       keyFeatures: [
         'Secure user authentication with session management',
@@ -17,7 +17,7 @@
         'User verification emails via Nodemailer integration'
       ],
       liveDemo: 'https://elegance-4zcb.onrender.com/',
-      github: 'https://github.com/jasmineismail/elegance-ecommerce'
+      github: 'https://github.com/jasmineismail/Elegance'
     },
     {
       id: 'netflix-clone',
@@ -36,7 +36,7 @@
         'Hosted and continuously deployed using Firebase Hosting'
       ],
       liveDemo: 'https://my-netflix-jasmine.web.app/',
-      github: 'https://github.com/jasmineismail/netflix-clone'
+      github: 'https://github.com/jasmineismail/my-netflix'
     },
     {
       id: 'youtube-clone',
@@ -46,7 +46,7 @@
       featured: true,
       image: 'https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?auto=format&fit=crop&w=800&q=80',
       description: 'A feature-complete YouTube interface replica allowing users to search videos, view channel stats, watch content, and explore personalized recommendations.',
-      techStack: ['React.js', 'Redux Toolkit', 'YouTube Data API v3', 'Tailwind CSS'],
+      techStack: ['React.js', 'Redux Toolkit', 'YouTube Data API', 'Tailwind CSS'],
       keyFeatures: [
         'Global state management utilizing Redux Toolkit for seamless navigation',
         'Live video search with auto-debounced query execution',
@@ -54,7 +54,7 @@
         'Responsive user interface design'
       ],
       liveDemo: 'https://my-youtube-swart-eta.vercel.app/',
-      github: 'https://github.com/jasmineismail/youtube-clone'
+      github: 'https://github.com/jasmineismail/my-youtube'
     }
   ];
 

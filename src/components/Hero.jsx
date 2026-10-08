@@ -9,10 +9,10 @@ function Hero() {
             <p className='text-lg max-w-2xl'>I love creating beautiful and functional web applications using MongoDB, Express.js, React, and Node.js. Dedicated to writing modular clean code, crafting and engineering seamless digital experiences.</p>
         </div>
         <div className='mt-8 flex items-center justify-center'>
-            <a href='/projects' className='bg-white text-blue-950 hover:bg-gray-300 font-bold py-2 px-4 rounded'>
+            <a href='#projects' className='bg-white text-blue-950 hover:bg-gray-300 font-bold py-2 px-4 rounded'>
                  Projects
             </a>
-            <a href="/contact" className='bg-white text-blue-950 hover:bg-gray-300 font-bold py-2 px-4 rounded ml-4'>
+            <a href="#contact" className='bg-white text-blue-950 hover:bg-gray-300 font-bold py-2 px-4 rounded ml-4'>
                 Contact Me
             </a>
             <a href='/resume.pdf' download="jasmine_resume.pdf" className='bg-white text-blue-950 hover:bg-gray-300 font-bold py-2 px-4 rounded ml-4 flex items-center'>

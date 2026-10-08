@@ -14,28 +14,28 @@ function Header() {
       <nav>
           <ul className='flex justify-end space-x-4 mr-4'>
             <li>
-              <a href='/about' className='text-white hover:text-gray-300 transition-colors'>
+              <a href='#about' className='text-white hover:text-gray-300 transition-colors'>
                 About
               </a>
             </li> 
             
             <li>
-              <a href='/skills' className='text-white hover:text-gray-300'>
+              <a href='#skills' className='text-white hover:text-gray-300'>
                 Skills
               </a>  
             </li>
             <li>
-              <a href='/projects' className='text-white hover:text-gray-300'>
+              <a href='#projects' className='text-white hover:text-gray-300'>
                 Projects
               </a>
             </li>
             <li>
-              <a href='/experience' className='text-white hover:text-gray-300'>
+              <a href='#experience' className='text-white hover:text-gray-300'>
                 Experience
               </a>
             </li>
             <li>
-              <a href='/contact' className='text-white hover:text-gray-300'>
+              <a href='#contact' className='text-white hover:text-gray-300'>
                 Contact
               </a>
             </li>

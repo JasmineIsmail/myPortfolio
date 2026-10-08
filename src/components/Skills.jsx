@@ -13,19 +13,19 @@ const Skills = () => {
     setSkillsData(filteredSkills);
 };
   return (
-   <section className='bg-blue-950 text-white py-10'>
+   <section id ="skills" className='bg-blue-950 text-white py-10'>
     <div className='container mx-auto px-4'>
       <h2 className='text-3xl font-bold mb-8 text-center'>My technical toolkit</h2>
         <div className='flex justify-center mb-8'>
             <button 
-                className='bg-purple-700 hover:bg-purple-600 text-white font-bold py-2 px-4 rounded transition-colors cursor-pointer'
+                className='bg-white hover:bg-purple-600 text-blue-950 font-bold py-2 px-4 rounded transition-colors cursor-pointer'
                 onClick={() => showSkillsByCategory('All')}
             >
                 All
             </button> 
             {skillcategories.map((category, index) => (
                 <button key={index} 
-                    className='bg-purple-700 hover:bg-purple-600 text-white font-bold py-2 px-4 rounded transition-colors ml-2 cursor-pointer'
+                    className='bg-white hover:bg-purple-600 text-blue-950 font-bold py-1 px-2 rounded transition-colors ml-2 cursor-pointer'
                     onClick={() => showSkillsByCategory(category)}>
                     {category}
                 </button>
@@ -35,12 +35,9 @@ const Skills = () => {
             {skillsData.map((skill, index) =>{
                 const IconComponent = skill.icon;
                 return  (
-                <div key={index} className='bg-slate-500 p-6 rounded-lg shadow-lg'>
-                    <div className='mb-4'>
-                       < IconComponent className={`w-12 h-12 ${skill.color}`}/>
-                    </div>
-                    <h3 className='text-xl font-bold mb-2'>{skill.name}</h3>
-                    
+                <div key={index} className=' bg-slate-900 p-2 rounded-lg shadow-lg flex flex-col'>
+                    < IconComponent className={`w-12 h-12 ${skill.color} animate-pulse`}/>
+                    <h3 className='text-md mb-2'>{skill.name}</h3>
                 </div>
             )
             })}
