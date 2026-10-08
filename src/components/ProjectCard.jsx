@@ -46,7 +46,7 @@ function ProjectCard({data}) {
         ))}
       </div>
       <div className='flex gap-2 pt-2 justify-end'>
-        <a href={data.liveDemo} target="_blank" rel="noopener noreferrer" className='bg-purple-700 hover:bg-purple-600 text-white font-bold py-2 px-4 rounded transition-colors'> 
+        <a href={data.liveDemo} target="_blank" rel="noopener noreferrer" className='bg-gray-700 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded transition-colors'> 
          <FaExternalLinkAlt className='w-4 h-4 inline-block mr-1' />
         </a>
         <a href={data.github} target="_blank" rel="noopener noreferrer" className='bg-gray-700 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded transition-colors'>
